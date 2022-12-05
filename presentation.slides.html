@@ -13220,7 +13220,21 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1056;&#1077;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1077;-&#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;-&#1041;&#1102;&#1088;&#1075;&#1077;&#1088;&#1089;&#1072;">&#1056;&#1077;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1077; &#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077; &#1041;&#1102;&#1088;&#1075;&#1077;&#1088;&#1089;&#1072;<a class="anchor-link" href="#&#1056;&#1077;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1077;-&#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;-&#1041;&#1102;&#1088;&#1075;&#1077;&#1088;&#1089;&#1072;">&#182;</a></h2><p>Для случая неоднородных граничных условий в СО детонационной волны <em>(Касимов и Гончар, 2020)</em>:</p>
+<h2 id="&#1052;&#1086;&#1090;&#1080;&#1074;&#1072;&#1094;&#1080;&#1103;-&#1087;&#1088;&#1086;&#1074;&#1086;&#1076;&#1103;&#1097;&#1077;&#1081;&#1089;&#1103;-&#1088;&#1072;&#1073;&#1086;&#1090;&#1099;">&#1052;&#1086;&#1090;&#1080;&#1074;&#1072;&#1094;&#1080;&#1103; &#1087;&#1088;&#1086;&#1074;&#1086;&#1076;&#1103;&#1097;&#1077;&#1081;&#1089;&#1103; &#1088;&#1072;&#1073;&#1086;&#1090;&#1099;<a class="anchor-link" href="#&#1052;&#1086;&#1090;&#1080;&#1074;&#1072;&#1094;&#1080;&#1103;-&#1087;&#1088;&#1086;&#1074;&#1086;&#1076;&#1103;&#1097;&#1077;&#1081;&#1089;&#1103;-&#1088;&#1072;&#1073;&#1086;&#1090;&#1099;">&#182;</a></h2><p style="text-align: justify;">Существенно нелинейный характер детонационных явлений наводит на мысль о возможности регуляризации колебаний детонационных волн подобно регуляризации отклика других нелинейных динамических систем синхронизацией мод, а конкретно через периодическое изменение среды перед волной. Такое упрощение и контроль детонации представляют не только большой теоретический интерес: гашение и усиление, а также регуляризация даже вполне хаотических режимов детонации имеет многие приложения, например, в конструировании детонационных двигателей. Возможность такой регуляризации подтверждается предыдущими исследованиями<!-- — изучением структуры решений уравнений Эйлера с помощью SSP-ERK(3, 3) с FD-WENO5-M на кластере-->. Для более детального изучения детонационной структуры в слабо нелинейном пределе вместо системы уравнений Эйлера можно воспользоваться гораздо более простым<!-- одномерным реактивным уравнением Бюргерса-->.<!--, которое само по себе, насколько известно на данный момент, вполне отражает всё богатство нелинейной структуры детонаций.--> <!--Однако и изучение структуры его решений требует больших вычислительных мощностей и параллельных вычислений, где снова может быть использовано суперкомпьютерное моделирование. В данной работе рассматривается численное решение уравнения с помощью eBDF5, SSPTSERK(12, 8) с FD-WENO5-FM и FD-WENO7-FM.--></p><!-- <p>Ключевые слова: ERK(6, 5), SSP-ERK(3, 3), WENO-схемы, WENO5, WENO5-FM, WENO7, WENO7-FM, детонации, метод прямых, методы Рунге-Кутты, нелинейная динамика, нелинейные схемы, регуляризация детонационных волн, синхронизация, суперкомпьютерное моделирование, существенно не осциллирующие схемы и их модификации, численное моделирование, языки Арнольда</p> -->
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1062;&#1077;&#1083;&#1100;-&#1087;&#1088;&#1086;&#1074;&#1086;&#1076;&#1103;&#1097;&#1077;&#1081;&#1089;&#1103;-&#1088;&#1072;&#1073;&#1086;&#1090;&#1099;">&#1062;&#1077;&#1083;&#1100; &#1087;&#1088;&#1086;&#1074;&#1086;&#1076;&#1103;&#1097;&#1077;&#1081;&#1089;&#1103; &#1088;&#1072;&#1073;&#1086;&#1090;&#1099;<a class="anchor-link" href="#&#1062;&#1077;&#1083;&#1100;-&#1087;&#1088;&#1086;&#1074;&#1086;&#1076;&#1103;&#1097;&#1077;&#1081;&#1089;&#1103;-&#1088;&#1072;&#1073;&#1086;&#1090;&#1099;">&#182;</a></h2><p style="text-align: justify;">Основная вычислительная задача в изучении подобных процессов: эффективное получение разрывных и высокоградиентных решений со сложной нелинейной структурой.</p><p style="text-align: justify;"><span style="font-style: italic;">Итоговая цель работы:</span> детальное рассмотрение динамики одномерной волны детонации (временного развития изначально стационарного решения, возмущённого численным шумом) в газовой смеси с периодически меняющимися в пространстве свойствами и составления «карты» спектральных свойств детонации для области параметрического пространства гармонически изменяющегося состояния среды перед ударной волной с помощью методов высокого порядка.</p><p style="text-align: justify;"><span style="font-style: italic;">Ключевые слова:</span> eBDF5, ERK(6, 5), SSP-ERK(3, 3), SSP-TS-ERK(12, 8), WENO-схемы, WENO5, WENO5-FM, WENO7, WENO7-FM, детонации, метод прямых, методы Рунге-Кутты, нелинейная динамика, нелинейные схемы, регуляризация детонационных волн, синхронизация, суперкомпьютерное моделирование, существенно не осциллирующие схемы и их модификации, численное моделирование, языки Арнольда</p>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1056;&#1077;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1077;-&#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;-&#1041;&#1102;&#1088;&#1075;&#1077;&#1088;&#1089;&#1072;">&#1056;&#1077;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1077; &#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077; &#1041;&#1102;&#1088;&#1075;&#1077;&#1088;&#1089;&#1072;<a class="anchor-link" href="#&#1056;&#1077;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1077;-&#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;-&#1041;&#1102;&#1088;&#1075;&#1077;&#1088;&#1089;&#1072;">&#182;</a></h2><p>Для случая неоднородных граничных условий в СО детонационной волны <em>(Kasimov &amp; Gonchar. Proc. Combust. Inst. (2020) <a href="https://www.sciencedirect.com/science/article/abs/pii/S1540748920306404">doi:10.1016/j.proci.2020.07.149</a>)</em>:</p>
 $$ \forall x \leqslant 0 \quad \forall t &gt; 0 \quad 
 \boxed{\partial_{t}u\left(x,t\right)+\partial_{x}F\left[u\left(x,t\right),u\left(x=x_{s},t\right)\right]=S_{\text{KFR}}\left[x;u\left(x=x_{s},t\right)\right]},
 $$<p>где поток имеет вид $ \frac{1}{2}\left(u\left(x,t\right)\right)^2 - D_s u\left(x,t\right) $,</p>
@@ -13291,12 +13305,28 @@ $$ S_{*}\left[x_*, u_{*}\left(x_{s*}, t_*\right)\right] = \left( 4  \sqrt{2\pi} 
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1057;&#1090;&#1072;&#1094;&#1080;&#1086;&#1085;&#1072;&#1088;&#1085;&#1086;&#1077;-&#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1077;">&#1057;&#1090;&#1072;&#1094;&#1080;&#1086;&#1085;&#1072;&#1088;&#1085;&#1086;&#1077; &#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1090;&#1072;&#1094;&#1080;&#1086;&#1085;&#1072;&#1088;&#1085;&#1086;&#1077;-&#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1077;">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<figure style="text-align: center; margin: 0 auto;"><img style="text-align: center; margin: 0 auto;" src="beta.svg" alt="бегущая волна"/>
+    <figcaption style="text-align: center; margin: 0 auto;">Рис. 2: Стационарные решения при разных $ \beta $</figcaption>
+</figure>
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103;-&#1075;&#1080;&#1087;&#1077;&#1088;&#1073;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093;-&#1079;&#1072;&#1082;&#1086;&#1085;&#1086;&#1074;-&#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103;">&#1052;&#1077;&#1090;&#1086;&#1076;&#1099; &#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1086;&#1075;&#1086; &#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103; &#1075;&#1080;&#1087;&#1077;&#1088;&#1073;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093; &#1079;&#1072;&#1082;&#1086;&#1085;&#1086;&#1074; &#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103;-&#1075;&#1080;&#1087;&#1077;&#1088;&#1073;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093;-&#1079;&#1072;&#1082;&#1086;&#1085;&#1086;&#1074;-&#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103;">&#182;</a></h2><figure><img src="hyper_pde_solution1.png" alt="DOI 10.1007/s10915-013-9787-8"/>
-    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 2: позаимствован из <a href="https://link.springer.com/article/10.1007/s10915-013-9787-8">DOI 10.1007/s10915-013-9787-8</a></figcaption>
+<h2 id="&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103;-&#1075;&#1080;&#1087;&#1077;&#1088;&#1073;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093;-&#1079;&#1072;&#1082;&#1086;&#1085;&#1086;&#1074;-&#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103;">&#1052;&#1077;&#1090;&#1086;&#1076;&#1099; &#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1086;&#1075;&#1086; &#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103; &#1075;&#1080;&#1087;&#1077;&#1088;&#1073;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093; &#1079;&#1072;&#1082;&#1086;&#1085;&#1086;&#1074; &#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103;-&#1075;&#1080;&#1087;&#1077;&#1088;&#1073;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093;-&#1079;&#1072;&#1082;&#1086;&#1085;&#1086;&#1074;-&#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103;">&#182;</a></h2><figure><img src="hyper_pde_solution1.svg" alt="DOI 10.1007/s10915-013-9787-8"/>
+    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 3: Идея классификации позаимствована из <span style="font-style: italic;">Seal, Güçlü & Christlieb. J Sci Comput 60, 101–140. (2014) <a href="https://link.springer.com/article/10.1007/s10915-013-9787-8">doi:10.1007/s10915-013-9787-8</a></span></figcaption>
 </figure>
 </div>
 </div>
@@ -13305,7 +13335,7 @@ $$ S_{*}\left[x_*, u_{*}\left(x_{s*}, t_*\right)\right] = \left( 4  \sqrt{2\pi} 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <figure style="text-align: center;"><img style="text-align: center; margin: 0 auto;" src="scheme.svg" alt="Wave in a non-uniform medium solution numerical scheme"/>
-    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 3 Схема профиля численного решения для случая неоднородной гармонически меняющейся среды перед детонационной волной</figcaption>
+    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 4: Схема профиля численного решения для случая неоднородной гармонически меняющейся среды перед детонационной волной</figcaption>
 </figure>
 </div>
 </div>
@@ -13367,15 +13397,15 @@ $\displaystyle \frac{0.0625 α \left(u_{s} \left(1.0 - A\right)\right)^{- α} \l
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#1056;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099;-&#1089;-WENO5-JS-&#1080;-WENO5-M-&#1076;&#1083;&#1103;-&#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1081;-&#1069;&#1081;&#1083;&#1077;&#1088;&#1072;">&#1056;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099; &#1089; WENO5-JS &#1080; WENO5-M &#1076;&#1083;&#1103; &#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1081; &#1069;&#1081;&#1083;&#1077;&#1088;&#1072;<a class="anchor-link" href="#&#1056;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099;-&#1089;-WENO5-JS-&#1080;-WENO5-M-&#1076;&#1083;&#1103;-&#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1081;-&#1069;&#1081;&#1083;&#1077;&#1088;&#1072;">&#182;</a></h2><figure><img style="text-align: center; margin: 0 auto; width:50%;" src="aim_ad_astra.png" />
-    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 4: Языки Арнольда, полученные для уравнений Эйлера</figcaption></figure>
+    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 5: Языки Арнольда, полученные для уравнений Эйлера <span style="font-style: italic;">(Goldin & Kasimov. J. Fluid Mech. vol. 946. (2022) <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/synchronization-of-detonations-arnold-tongues-and-devils-staircases/7AD32F264E212A932B80DDE146B09C1A">doi:10.1017/jfm.2022.581</a>)</span></figcaption></figure>
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1050;&#1086;&#1085;&#1077;&#1095;&#1085;&#1099;&#1077;-&#1094;&#1077;&#1083;&#1080;-&#1080;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;-&#1080;-&#1090;&#1077;&#1082;&#1091;&#1097;&#1080;&#1081;-&#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;-(&quot;&#1085;&#1091;&#1083;&#1077;&#1074;&#1086;&#1077;-&#1087;&#1088;&#1080;&#1073;&#1083;&#1080;&#1078;&#1077;&#1085;&#1080;&#1077;&quot;)">&#1050;&#1086;&#1085;&#1077;&#1095;&#1085;&#1099;&#1077; &#1094;&#1077;&#1083;&#1080; &#1080;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103; &#1080; &#1090;&#1077;&#1082;&#1091;&#1097;&#1080;&#1081; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090; ("&#1085;&#1091;&#1083;&#1077;&#1074;&#1086;&#1077; &#1087;&#1088;&#1080;&#1073;&#1083;&#1080;&#1078;&#1077;&#1085;&#1080;&#1077;")<a class="anchor-link" href="#&#1050;&#1086;&#1085;&#1077;&#1095;&#1085;&#1099;&#1077;-&#1094;&#1077;&#1083;&#1080;-&#1080;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;-&#1080;-&#1090;&#1077;&#1082;&#1091;&#1097;&#1080;&#1081;-&#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;-(&quot;&#1085;&#1091;&#1083;&#1077;&#1074;&#1086;&#1077;-&#1087;&#1088;&#1080;&#1073;&#1083;&#1080;&#1078;&#1077;&#1085;&#1080;&#1077;&quot;)">&#182;</a></h2><figure style="text-align: center; margin: 0 auto;"><img src="zeroth_approx.png" style="text-align: center; margin: 0 auto; width: 50%;" />
-    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 5: 3120 точек в пространстве параметров $(\omega, A)$ гармонических условий среды, подсвеченных по грубо посчитанному числу различных максимумов $u_s$</figcaption></figure>
+<h2 id="&#1058;&#1077;&#1082;&#1091;&#1097;&#1080;&#1077;-&#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099;-&#1080;-&#1082;&#1086;&#1085;&#1077;&#1095;&#1085;&#1099;&#1077;-&#1094;&#1077;&#1083;&#1080;-&#1080;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;">&#1058;&#1077;&#1082;&#1091;&#1097;&#1080;&#1077; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099; &#1080; &#1082;&#1086;&#1085;&#1077;&#1095;&#1085;&#1099;&#1077; &#1094;&#1077;&#1083;&#1080; &#1080;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;<a class="anchor-link" href="#&#1058;&#1077;&#1082;&#1091;&#1097;&#1080;&#1077;-&#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099;-&#1080;-&#1082;&#1086;&#1085;&#1077;&#1095;&#1085;&#1099;&#1077;-&#1094;&#1077;&#1083;&#1080;-&#1080;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;">&#182;</a></h2><figure style="text-align: center; margin: 0 auto;"><img src="zeroth_approx.png" style="text-align: center; margin: 0 auto; width: 50%;" />
+    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 6: 3120 точек в пространстве параметров $(\omega, A)$ гармонических условий среды, подсвеченных по грубо посчитанному числу различных максимумов $u_s$</figcaption></figure>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13383,7 +13413,7 @@ $\displaystyle \frac{0.0625 α \left(u_{s} \left(1.0 - A\right)\right)^{- α} \l
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <figure style="text-align: center; margin: 0 auto;"><img src="unstable_detonation_mode_locking.png" style="text-align: center; margin: 0 auto; width: 80%;" />
-    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 6: Неустойчивая детонация с $ \alpha=4.5 $, $ \beta=0.1 $, среда перед волной определяется $ A=0.05 $, (a) $ k=0 $, (b) $ k=0.01 $, (c) $ k = 0.1 $</figcaption></figure>
+    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 7: Неустойчивая детонация с $ \alpha=4.5 $, $ \beta=0.1 $, среда перед волной определяется $ A=0.05 $, (a) $ k=0 $, (b) $ k=0.01 $, (c) $ k = 0.1 $</figcaption></figure>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13398,7 +13428,7 @@ $\displaystyle \frac{0.0625 α \left(u_{s} \left(1.0 - A\right)\right)^{- α} \l
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><p style="text-align: justify;">"Несмотря на обширную литературу по данному направлению, вопрос расширения порядка аппроксимации схем и выбора нелинейных весов для сохранения высокого порядка аппроксимации на немонотонных участках решений является открытым."<p></p>
-<p>-Н. М. Евстигнеев, 2016</p>
+<p>—<span style="font-style: italic;">Н. М. Евстигнеев. Компьютерные исследования и моделирование, 8:5, 721–753. (2016) <a href="http://crm.ics.org.ru/journal/article/2498/">doi:10.20537/2076-7633-2016-8-5-721-753</a></span></p>
 <p>Также мало изучен вопрос условия Куранта и совместной сходимости WENO5 с разными методами интегрирования по времени. Этим вопросом часто пренебрегают.</p>
 
 </div>
@@ -13408,7 +13438,7 @@ $\displaystyle \frac{0.0625 α \left(u_{s} \left(1.0 - A\right)\right)^{- α} \l
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <figure style="text-align: center;"><img style="text-align: center; margin: 0 auto;" src="weno5.png" alt="WENO5 schematic analysis"/>
-    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 7: Схема WENO5 метода реконструкции (см. <span style="font-style: italic;">Хонг и др., 2020</span>)</figcaption>
+    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 9: Схема WENO5 метода реконструкции (см. <span style="font-style: italic;">Hong, Ye & Ye. Advances in Aerodynamics 2(1). (2020) <a href="https://www.researchgate.net/publication/343379646_An_improved_WENO-Z_scheme_with_symmetry-preserving_mapping">doi:10.1186/s42774-020-00043-w</a></span>)</figcaption>
 </figure>
 </div>
 </div>
@@ -13431,22 +13461,26 @@ $$ \left.\frac{du}{dt}\right|_{x=x_j} \approx - \frac{\hat{f}_{j+1/2} - \hat{f}_
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$ \hat{f}_{j+1/2}=\begin{cases}
+<h2 id="WENO-JS-&#1080;-&#1076;&#1088;&#1091;&#1075;&#1080;&#1077;-WENO-&#1089;&#1093;&#1077;&#1084;&#1099;">WENO-JS &#1080; &#1076;&#1088;&#1091;&#1075;&#1080;&#1077; WENO &#1089;&#1093;&#1077;&#1084;&#1099;<a class="anchor-link" href="#WENO-JS-&#1080;-&#1076;&#1088;&#1091;&#1075;&#1080;&#1077;-WENO-&#1089;&#1093;&#1077;&#1084;&#1099;">&#182;</a></h2>$$ \hat{f}_{j+1/2}=\begin{cases}
 \mathscr{F}\left[f_{j-(r-1)},\dots,f_{j-1},f_{j},f_{j+1},\dots,f_{j+(r-1)}\right] &amp; \text{для }\rightarrow\text{ волн}\\
 \mathscr{F}\left[f_{j+(r-1)+1},\dots,f_{j+2},f_{j+1},f_{j},\dots,f_{j-(r-1)+1}\right] &amp; \text{для }\leftarrow\text{ волн}.
-\end{cases}$$$$ \mathscr{F}\left[f_{j-(r-1)},\dots,f_{j+(r-1)}\right] = \sum_{k=0}^{r-1} \omega_k \cdot \hat{f}_k $$$$ \omega_n = \frac{\alpha_n}{\sum_k\alpha_k}, \text{ где } \alpha_n = \frac{\bar{\omega}^{\text{lin. ideal}}_n}{\left(\varepsilon + \beta_k\right)^p} $$$$ \beta_m \stackrel{\text{def}}{:=} \sum_{k=0}^{r-1} \Delta x^{2k-1}\intop_{x_{j-1/2}}^{x_{j+1/2}} \left(\frac{d^k \hat{f}_k}{dx^k}\right)^2 dx $$
+\end{cases}$$$$ \mathscr{F}\left[f_{j-(r-1)},\dots,f_{j+(r-1)}\right] = \sum_{k=0}^{r-1} \omega_k \cdot \hat{f}_k $$$$ \omega_n = \frac{\alpha_n}{\sum_k\alpha_k}, \text{ где } \alpha_n = \frac{\bar{\omega}^{\text{lin. ideal}}_n}{\left(\varepsilon + \beta_k\right)^p}, $$$$ \beta_m \stackrel{\text{def}}{:=} \sum_{k=0}^{r-1} \Delta x^{2k-1}\intop_{x_{j-1/2}}^{x_{j+1/2}} \left(\frac{d^k \hat{f}_k}{dx^k}\right)^2 dx $$
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WENO-M">WENO-M<a class="anchor-link" href="#WENO-M">&#182;</a></h2>$$ g_{\text{HAP}}\colon\omega\mapsto\frac{\omega\left(\bar{\omega}_{k}^{\text{lin. ideal}}+\left(\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{2}-3.\bar{\omega}_{k}^{\text{lin. ideal}}\cdot\omega+\omega^{2}\right)}{\left(\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{2}+\omega\left(1.-2.\bar{\omega}_{k}^{\text{lin. ideal}}\right)},\qquad\substack{k=\overline{0,\left(r-1\right)}\\
+<h2 id="WENO-M">WENO-M<a class="anchor-link" href="#WENO-M">&#182;</a></h2><p>Первое предложенное отображение, восстанавливающее порядок схем WENO-JS в критических точках (и улучшающее спектральные характеристики):
+$$ g_{\text{HAP}}\colon\omega\mapsto\frac{\omega\left(\bar{\omega}_{k}^{\text{lin. ideal}}+\left(\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{2}-3.\bar{\omega}_{k}^{\text{lin. ideal}}\cdot\omega+\omega^{2}\right)}{\left(\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{2}+\omega\left(1.-2.\bar{\omega}_{k}^{\text{lin. ideal}}\right)},\qquad\substack{k=\overline{0,\left(r-1\right)}\\
 \bar{\omega}_{k}^{\text{lin. ideal}}\in\left(0\mathop{..}1\right)
-} $$$$ g_{\text{HAP}}\colon\omega\mapsto\left(\bar{\omega}_{k}^{\text{lin. ideal}}+\frac{\left(\omega-\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{3}}{\left(\omega-\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{2}+\omega\cdot\left(1.-\omega\right)}\right),\qquad\substack{k=\overline{0,\left(r-1\right)}\\
+}, $$
+что можно записать более осмысленно с выделением $\bar{\omega}_{k}^{\text{lin. ideal}}$, как 
+$$ g_{\text{HAP}}\colon\omega\mapsto\left(\bar{\omega}_{k}^{\text{lin. ideal}}+\frac{\left(\omega-\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{3}}{\left(\omega-\bar{\omega}_{k}^{\text{lin. ideal}}\right)^{2}+\omega\cdot\left(1.-\omega\right)}\right),\qquad\substack{k=\overline{0,\left(r-1\right)}\\
 \bar{\omega}_{k}^{\text{lin. ideal}}\in\left(0\mathop{..}1\right)
-}
-$$
+}.
+$$</p>
+
 </div>
 </div>
 </div></section></section><section><section>
@@ -13460,7 +13494,8 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$ \lambda_j \stackrel{\text{def}}{:=} \frac{1/\left(\beta_j+\epsilon\right)^p}{\sum_k\left(\beta_k+\epsilon\right)^p} $$$$ g_{\text{FM}}\colon\lambda\mapsto\frac{\lambda\left(\bar{\lambda}+\left(\bar{\lambda}\right)^{2}-3.\bar{\lambda}\cdot\lambda+\lambda^{2}\right)}{\left(\bar{\lambda}\right)^{2}+\lambda\left(1.-2.\bar{\lambda}\right)},\qquad \bar{\lambda}\stackrel{\text{def}}{:=}\frac{1}{r}\in\left(0\mathop{..}1\right) $$
+<p>Недавно предложенный симметризованный (более симметричный по изначальным весам JS и более независимый от направления потока) вариант отображения:</p>
+$$ \lambda_j \stackrel{\text{def}}{:=} \frac{1/\left(\beta_j+\epsilon\right)^p}{\sum_k\left(\beta_k+\epsilon\right)^p} $$$$ g_{\text{FM}}\colon\lambda\mapsto\frac{\lambda\left(\bar{\lambda}+\left(\bar{\lambda}\right)^{2}-3.\bar{\lambda}\cdot\lambda+\lambda^{2}\right)}{\left(\bar{\lambda}\right)^{2}+\lambda\left(1.-2.\bar{\lambda}\right)},\qquad \bar{\lambda}\stackrel{\text{def}}{:=}\frac{1}{r}\in\left(0\mathop{..}1\right). $$
 </div>
 </div>
 </div></section></section><section><section>
@@ -13468,14 +13503,15 @@ $$ \lambda_j \stackrel{\text{def}}{:=} \frac{1/\left(\beta_j+\epsilon\right)^p}{
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <figure style="text-align: center; margin: 0 auto;"><img src="weno5fm_err.svg" style="text-align: center; margin: 0 auto; width: 80%;" />
-    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 7: Анализ порядка аппроксимации для $u\left(x_s\right)$ с использованием eBDF5-FD-WENO5-FM c $\text{CFL}=0.16$ на случае простой устойчивой детонации с $u\left(x_s\right)=1.$</figcaption></figure>
+    <figcaption style="text-align: center; margin: 0 auto; ">Рис. 10: Анализ порядка аппроксимации для $u\left(x_s\right)$ с использованием eBDF5-FD-WENO5-FM c $\text{CFL}=0.16$ на простом устойчивом решении детонации с обезразмеренным реактивным уравнением Бюргерса с $u\left(x_s\right)=1.$</figcaption></figure>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WENO-S">WENO-S<a class="anchor-link" href="#WENO-S">&#182;</a></h2><p><em>Ву и др., 2021</em>
+<h2 id="WENO-S">WENO-S<a class="anchor-link" href="#WENO-S">&#182;</a></h2><p><em>Wu et al. J. Comp. Phys. 432. (2021) <a href="https://www.researchgate.net/publication/348872745_Very_high_order_WENO_schemes_using_efficient_smoothness_indicators">doi:10.1016/j.jcp.2021.110158</a>.</em></p>
+<p>Новые веса, постоянные на модах (синусоидах):
 $$ \delta_S \left[f\right] = x \mapsto \left(f\left(x+h/2\right)-f\left(x-h/2\right)\right) $$
 $$ \sigma_S \left[f\right] = x \mapsto \left(f\left(x+h/2\right)+f\left(x-h/2\right)\right) $$
 $$ a = \left.\left[\sigma_S^2 \delta_S^{r-3} f\right]\right|_{x=x_c}, \quad
@@ -13486,7 +13522,7 @@ $$ \left(\alpha_S\right) = \bar{\omega}^{\text{lin. ideal}} \left( 1 + \left(\fr
 $$ \tau_{2r-1(S)} = \beta_S \left[\delta^{r-1}f\right] \text{ в }x_c=x_j $$
 $$ a, b, c = \sum_{подшаблон} \gamma_{r,l} f_k $$</p>
 <figure style="text-align: center; margin: 0 auto;"><img style="text-align: center; margin: 0 auto;" src="weno_s.png" />
-    <figcaption style="text-align: center; margin: 0 auto;">Рис. 9: Коэффициенты $\gamma_{r,l}$ для WENO11-S</figcaption></figure>
+    <figcaption style="text-align: center; margin: 0 auto;">Рис. 11: Коэффициенты $\gamma_{r,l}$ для WENO11-S</figcaption></figure>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13530,7 +13566,7 @@ require(
             progress: true,
             history: true,
 
-            transition: "slide",
+            transition: "concave",
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
